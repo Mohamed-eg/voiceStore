@@ -1,0 +1,56 @@
+.contactPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.contactPage h1 {
+  font-size: 30px;
+}
+
+.contactPage img {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.contactPage div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  color: #444444;
+}
+
+.contactPage div span a i {
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 8px;
+  -webkit-box-shadow: 0 0 5px ,inset 0 0 5px;
+          box-shadow: 0 0 5px ,inset 0 0 5px;
+}
+
+.contactPage a i:hover {
+  color: black;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,77 @@
+.allProdacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 50px 0 0 0;
+    h1{
+        width: 20%;
+        text-align: center;
+    }
+    h1:nth(1){
+        width: 30%;
+    }
+    header,.singlProdact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+        border: 2px solid #000;
+        .CardContaner{
+            height: 27em;
+            button{
+                display: none;
+            }
+        }
+    }
+    header{
+        background-color: rgb(215, 243, 250);
+    }
+    .singlProdact{
+        span{
+            box-shadow: 0 0 5px,inset 0 0 5px;
+            padding: 7px;
+            border-radius: 3px;
+            text-align: center;
+            cursor: pointer;
+            margin: 5px;
+            width: 10%;
+           i{font-size: 20px;} 
+        }
+        span:hover{
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+        }
+        h2{
+            position: relative;
+            text-align: center;
+            width: 20%;
+        }
+
+    }
+    
+}
+.allProdacts>span{
+    width: 10%;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px dashed black;
+    border-radius: 10px;
+}
+
+@media (max-width:700px) {
+    .allProdacts .singlProdact{
+        flex-direction: column;
+        .CardContaner{
+            height: 25em;
+            width: 280px;
+        }
+    }
+}

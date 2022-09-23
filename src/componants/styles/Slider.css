@@ -1,0 +1,33 @@
+.SliderConatner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-image: url(../../img/iStock-937283086.jpg);
+  padding: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+
+img[alt="Nike"] {
+  position: relative;
+  max-width: 200px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 0 0 10px rgba(0, 0, 0, 0.788);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.788), inset 0 0 10px rgba(0, 0, 0, 0.788);
+  border-radius: 7px;
+  margin-top: 150px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 9;
+}
+/*# sourceMappingURL=Slider.css.map */

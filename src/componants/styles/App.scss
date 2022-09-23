@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 15px;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.281)
+    ,inset 0 -5px 5px rgba(0, 0, 0, 0.281);
+    z-index: 20;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgb(252, 253, 253);
+}
+nav h1{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+.fire{
+color: rgb(255, 0, 0);
+margin: 2px;
+top: -7px;
+position: relative;
+}
+nav > div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3333%;
+    height: 50px;
+    z-index: 3;
+}
+.listDiv{
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 5;
+    max-width: 10%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.listDiv:hover{
+    span{
+        border-color: aqua;
+    }
+}
+.count{
+    position: relative;
+    color: black;
+    top: -7px;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 50%;
+}
+nav div .listDiv span{
+    transition: .5s;
+    width: 30px;
+    border: 2px solid rgb(27, 88, 255);;
+    border-radius: 5px;
+    margin: 5px;
+}
+.navdivs1 div:nth-child(1){
+    position: relative;
+    margin-left: -33.3333%;
+    transition: .5s;
+    max-width: 33.3333%;
+}
+.navdivs1{
+    justify-content: flex-start;
+}
+.active1{
+    position: absolute;
+    transform: rotate(45deg);
+    box-shadow: 0 0 5px rgb(255, 0, 106);
+}
+.active2{
+    position: absolute;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 5px rgb(255, 0, 106);
+}
+.active3{
+   visibility: hidden;
+}
+.navdivs2{
+    justify-content: flex-end;
+}
+nav .navdivs1 .activelist{
+    margin-left: 0px;
+    color: rgb(255, 163, 163);
+}
+nav a{
+    margin: 7px;
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    padding: 4px;
+    border-radius: 15px;
+    max-height: 50px;
+    min-width: max-content;
+    p{
+        display: inline;
+    }
+}
+nav a span{
+    color:rgb(0, 123, 172) ;
+    margin: 1px;
+}
+nav a:hover{
+    color: rgb(27, 88, 255);
+    box-shadow: 0 0 5px #000,inset 0 0 3px #000;
+    text-shadow: 0 0 5px rgb(27, 145, 255);;
+}
+.Menu{
+    position: relative;
+    background-color: rgba(252, 253, 253, 0.548);
+    box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.281);
+    width: 100%;
+    z-index: 2;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.Menu a:nth-child(1){
+    margin-top: 20px;
+}
+#AllMenu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 93vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    z-index: 2;
+}
+.navdivs2 .active{
+    box-shadow: 0 0 3px  #000,inset 0 0 3px  #000;
+    border-radius: 15px;
+    color: rgb(234, 0, 255);
+    font-weight: bold;
+}
+.navdivs2 .active span{
+    color: rgb(0, 240, 240);
+}
+#AllMenu h3{
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+@media  (max-width:700px) {
+img[alt="Nike"]{
+        max-width: 100px;
+    }
+    .navdivs2 a p{
+        display: none;
+    }
+    nav > div:nth-child(2){
+        display: none;
+    }
+    .navdivs1 div:nth-child(1){
+        max-width: 85%;
+        margin-left: -85%;
+    }
+    nav .navdivs1 .activelist{
+        margin-left: 0px;
+        color: rgb(255, 163, 163);
+    }
+}
